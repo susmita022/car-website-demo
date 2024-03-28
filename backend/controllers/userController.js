@@ -1,6 +1,8 @@
 const db = require('../models/User');
 const { hashPassword, comparePassword } = require('../utils/passwordUtils');
 const jwt = require('jsonwebtoken');
+const auth = require('../utils/auth');
+const passport = require('passport');
 
 const registerUser = async (req, res) => {
     const { name, email, password, state, city } = req.body;
@@ -20,6 +22,9 @@ const registerUser = async (req, res) => {
     }
 };
 
+const googleRegister= async(req, res) =>{
+    res.status(200).json({message: "Registration successful"});
+};
 
 const loginUser = async (req, res) => {
     const { email, password } = req.body;
@@ -46,11 +51,11 @@ const loginUser = async (req, res) => {
             const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET_KEY, {
                 expiresIn: '1h',
             });
-            res.status(200).json({ token, message: 'Login Successful' });
+            res.status(200).json({ message: 'Login Successful', name: user.name, email: user.email, state: user.state, city: user.city, token });
         });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 };
 
-module.exports = { registerUser, loginUser };
+module.exports = { registerUser, googleRegister, loginUser };
