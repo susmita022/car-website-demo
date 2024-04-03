@@ -21,15 +21,7 @@ function UtilityCard(props) {
               <h5 className="cards__item__text">{props.text}</h5>
             </div>
           </div>
-        </Link>
-        <hr
-          style={{
-            background: "#000000",
-            color: "#000000",
-            borderColor: "#000000",
-            height: "3px",
-          }}
-        />
+        </Link>  
       </li>
     </>
   );
