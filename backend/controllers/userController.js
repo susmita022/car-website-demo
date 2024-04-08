@@ -1,3 +1,5 @@
+//controllers/userController.js
+
 const db = require('../models/User');
 const { hashPassword, comparePassword } = require('../utils/passwordUtils');
 const jwt = require('jsonwebtoken');
@@ -22,8 +24,8 @@ const registerUser = async (req, res) => {
     }
 };
 
-const googleRegister= async(req, res) =>{
-    res.status(200).json({message: "Registration successful"});
+const googleRegister = async (req, res) => {
+    res.status(200).json({ message: "Registration successful" });
 };
 
 const loginUser = async (req, res) => {
