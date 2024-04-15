@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const auth = require('../utils/auth');
 const passport = require('passport');
 
+
 const registerUser = async (req, res) => {
     const { name, email, password, state, city } = req.body;
 
@@ -17,6 +18,8 @@ const registerUser = async (req, res) => {
                 console.error(err);
                 return res.status(500).json({ error: 'Error registering user' });
             }
+            const emailContent = `Dear ${user.name}, \n\n Welcome to Maruti Suzuki family. This email is being sent to confirm your registration.`;
+            emailUtils.sendEmail(user.email, 'Registration Confirmation', emailContent);
             res.status(201).json({ message: 'User registered successfully' });
         });
     } catch (err) {
