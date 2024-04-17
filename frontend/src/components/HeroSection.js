@@ -1,3 +1,6 @@
+// frontend/src/components/HeroSection.js
+
+
 import React from "react";
 import "../App.css";
 import { Button } from "./Button";

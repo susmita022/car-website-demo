@@ -1,6 +1,8 @@
+// frontend/src/components/pages/Home.js
+
+
 import React from "react";
 import "../../App.css";
-
 import HeroSection from "../HeroSection";
 import Utilities from "../Utilities";
 import Social from "../Socials";

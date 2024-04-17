@@ -1,3 +1,6 @@
+// frontend/src/components/Footer.js
+
+
 import React, { useState } from "react";
 import "./Footer.css";
 import { Button } from "./Button";
@@ -69,24 +72,12 @@ function Footer() {
           </div>
           <div class="footer-link-items">
             <h2>CARS</h2>
-            <Link to="/invicto" onClick={handleClick}>
-              Invicto
-            </Link>
-            <Link to="/" onClick={handleClick}>
-              Fronx
-            </Link>
-            <Link to="/" onClick={handleClick}>
-              Jimny
-            </Link>
-            <Link to="/Baleno" onClick={handleClick}>
-              Baleno
-            </Link>
-            <Link to="/gv" onClick={handleClick}>
-              Grand Vitara
-            </Link>
-            <Link to="/ignis" onClick={handleClick}>
-              Ignis
-            </Link>
+            <Link to="/">Invicto</Link>
+            <Link to="/">Fronx</Link>
+            <Link to="/">Jimny</Link>
+            <Link to="/">Baleno</Link>
+            <Link to="/">Swift</Link>
+            <Link to="/">Celerio</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
@@ -94,53 +85,48 @@ function Footer() {
         </div>
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
-            <h2>FOLLOW US</h2>
+            <h2>FOLLOW US ON</h2>
             <div class="social-icons">
-              <a
-                href="https://www.facebook.com/nexaexperience/"
-                className="social-icon-link facebook"
+              <Link
+                class="social-icon-link facebook"
+                to="/"
                 target="_blank"
                 aria-label="Facebook"
-                rel="noopener noreferrer"
               >
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/NEXAexperience/"
-                className="social-icon-link instagram"
+                <i class="fab fa-facebook-f" />
+              </Link>
+              <Link
+                class="social-icon-link instagram"
+                to="/"
                 target="_blank"
                 aria-label="Instagram"
-                rel="noopener noreferrer"
               >
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCB0CqBMH0bpv5nLXiiJbUJA"
-                className="social-icon-link youtube"
+                <i class="fab fa-instagram" />
+              </Link>
+              <Link
+                class="social-icon-link youtube"
+                to="/"
                 target="_blank"
                 aria-label="Youtube"
-                rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i>
-              </a>
-              <a
-                href="https://twitter.com/NEXAExperience"
-                className="social-icon-link twitter"
+                <i class="fab fa-youtube" />
+              </Link>
+              <Link
+                class="social-icon-link twitter"
+                to="/"
                 target="_blank"
                 aria-label="Twitter"
-                rel="noopener noreferrer"
               >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/maruti-udyog-limited?originalSubdomain=in"
-                className="social-icon-link linkedin"
+                <i class="fab fa-twitter" />
+              </Link>
+              <Link
+                class="social-icon-link linkedin"
+                to="/"
                 target="_blank"
                 aria-label="LinkedIn"
-                rel="noopener noreferrer"
               >
-                <i className="fab fa-linkedin"></i>
-              </a>
+                <i class="fab fa-linkedin" />
+              </Link>
             </div>
           </div>
         </div>

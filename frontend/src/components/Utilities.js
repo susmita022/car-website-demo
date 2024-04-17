@@ -1,6 +1,8 @@
+// frontend/src/components/Utilities.js
+
+
 import React from "react";
 import "./Ucards.css";
-import Call from "./Call";
 import UtilityCard from "./UtilityCard";
 
 function Utilities() {
@@ -24,7 +26,11 @@ function Utilities() {
               text="E BOOKING"
               path="/ebook"
             />
-            <Call src1="images/call.png" text="CALL A SALES EXECUTIVE" />
+            <UtilityCard
+              src1="images/call.png"
+              text="CALL A SALES EXECUTIVE"
+              path="/services"
+            />
           </ul>
         </div>
       </div>

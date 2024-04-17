@@ -1,3 +1,6 @@
+// frontend/src/components/pages/Ebook.js
+
+
 import React from "react";
 import "../../App.css";
 import Ebooking from "../Ebooking";

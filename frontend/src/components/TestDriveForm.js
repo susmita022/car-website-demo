@@ -1,3 +1,6 @@
+// frontend/src/components/TestDriveForm.js
+
+
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -11,7 +14,7 @@ function TestDriveForm() {
   const [selectTransmission, setSelectTransmission] = useState("");
   const [testDrive, setTestDrive] = useState("");
   const [preferredTime, setPreferredTime] = useState("");
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(null); // State to hold selected date
   const [errorMessage, setErrorMessage] = useState(""); // State to hold error message
 
   const handleSubmit = (e) => {
@@ -73,6 +76,7 @@ function TestDriveForm() {
             <label htmlFor="name">Name:</label>
             <input
               type="text"
+              id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required

@@ -1,21 +1,14 @@
-import React, { useState } from "react";
+// frontend/src/components/UtilityCard.js
+
+
+import React from "react";
 import { Link } from "react-router-dom";
 
 function UtilityCard(props) {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => {
-    setClick(!click);
-    window.scrollTo(0, 0); // Scroll to the top of the page
-  };
   return (
     <>
       <li className="cards__item">
-        <Link
-          className="cards__item__link"
-          to={props.path}
-          onClick={handleClick}
-        >
+        <Link className="cards__item__link" to={props.path}>
           <div className="cards__item__info">
             <figure>
               {" "}

@@ -2,11 +2,6 @@
     display: flex;
     justify-content: space-between;
     color: #302f2f;
-    font-weight: 500;
-}
-
-.test_heading{
-    font-weight:600;
 }
 
 .intro-column {
@@ -34,9 +29,8 @@
 }
 
 .text-cont {
-    font-size: 18px;
-    font-weight: 500;
-    color:#383d42 ;
+    font-size: 20px;
+    font-family: "Lato, Helvetica Neue, Helvetica, sans-serif";
 }
 
 .booklabel {
@@ -66,15 +60,13 @@ input:hover{
     border: 2px solid, rgb(158, 158, 158)c;
     border-radius: 4px;
     padding: 5px;
-    cursor: pointer;
 }
 
 .test_submit {
     width: 100%;
     padding: 13px;
-    background-color: #030F39;
+    background-color: #1E2772;
     color: white;
-    font-weight: 500;
     border: 3px;
     border-radius: 4px;
     cursor: pointer;
@@ -84,7 +76,7 @@ input:hover{
 }
 
 .test_submit:hover {
-    background-color: #152663;
+    background-color: #161c55;
 }
 
 @media screen and (max-width: 768px) {

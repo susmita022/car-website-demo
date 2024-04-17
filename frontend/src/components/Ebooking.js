@@ -1,3 +1,6 @@
+// frontend/src/components/Ebooking.js
+
+
 import React, { useState } from "react";
 import "./Ebooking.css";
 

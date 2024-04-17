@@ -81,13 +81,9 @@
     font-size: 15px;
     font-weight: bold;
 }
-.tabs button:hover {
-    background-color: #ffffff;
-    cursor: pointer;
-}
+
 .tabs button.active {
     color: #a8a7a7;
-    background-color: #ffffff;
 }
 
 .cards {

@@ -1,3 +1,5 @@
+// frontend/src/components/Navbar.js
+
 import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
@@ -77,20 +79,22 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <div
+              <Link
+                to="/"
                 className="nav-links"
                 onClick={() => handleModalOpen("signup")}
               >
                 {button && <Button buttonStyle="btn--outline">Sign Up</Button>}
-              </div>
+              </Link>
             </li>
             <li className="nav-item">
-              <div
+              <Link
+                to="/"
                 className="nav-links"
                 onClick={() => handleModalOpen("login")}
               >
                 {button && <Button buttonStyle="btn--outline">Log in</Button>}
-              </div>
+              </Link>
             </li>
           </ul>
         </div>

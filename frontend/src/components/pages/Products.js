@@ -1,3 +1,6 @@
+// frontend/src/components/pages/Product.js
+
+
 import React from "react";
 import "../../App.css";
 

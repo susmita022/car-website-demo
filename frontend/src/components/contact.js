@@ -1,30 +1,44 @@
+// frontend/src/components/contact.js
+
+
 import React, { useState } from "react";
+import axios from "axios";
+import { useHistory } from "react-router-dom/cjs/react-router-dom";
 import "./contact.css";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const history = useHistory()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Your form submission logic goes here
-    console.log(formData);
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    try {
+      const response = await axios.post("http://localhost:5000/api/contact/submit-contact-form", {
+        firstName,
+        lastName,
+        email,
+        subject,
+        message
+      });
+      if (response.ok) {
+        // Handle success, e.g., show a success message
+        console.log("Message sent successfully");
+        history.push("")
+
+      } else {
+        // Handle error, e.g., show an error message
+        console.error("Failed to send message");
+        history.push("")
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
@@ -109,39 +123,39 @@ const ContactUs = () => {
             type="text"
             name="firstName"
             placeholder="First Name"
-            value={formData.firstName}
-            onChange={handleChange}
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
             required
           />
           <input
             type="text"
             name="lastName"
             placeholder="Last Name"
-            value={formData.lastName}
-            onChange={handleChange}
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
             required
           />
           <input
             type="email"
             name="email"
             placeholder="Your Email Address"
-            value={formData.email}
-            onChange={handleChange}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
           <input
             type="text"
             name="subject"
             placeholder="Subject"
-            value={formData.subject}
-            onChange={handleChange}
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
             required
           />
           <textarea
             name="message"
             placeholder="Message"
-            value={formData.message}
-            onChange={handleChange}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             required
           ></textarea>
 

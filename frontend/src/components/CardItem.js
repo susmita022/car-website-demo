@@ -1,22 +1,15 @@
-import React, { useState } from "react";
+// frontend/src/components/CardItem.js
+
+
+import React from "react";
 import "./Button.css";
 import { Link } from "react-router-dom";
 
 function CardItem(props) {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => {
-    setClick(!click);
-    window.scrollTo(0, 0);
-  };
   return (
     <>
       <li className="cards__item">
-        <Link
-          className="cards__item__link"
-          to={props.path}
-          onClick={handleClick}
-        >
+        <Link className="cards__item__link" to={props.path}>
           <figure className="cards__item__pic-wrap" data-category={props.label}>
             <img className="cards__item__img" alt="Cars" src={props.src} />
           </figure>
@@ -30,14 +23,14 @@ function CardItem(props) {
             </div>
           </div>
           <div className="buttons">
-            <Link to="/ebook" onClick={handleClick}>
+            <Link to="/">
               <button type="button" className="btn btn--book">
                 E-Book Now
               </button>
             </Link>
           </div>
           <div>
-            <Link to={props.explorePath} onClick={handleClick}>
+            <Link to="/">
               <button type="button" className="btn btn--explore">
                 Explore
               </button>

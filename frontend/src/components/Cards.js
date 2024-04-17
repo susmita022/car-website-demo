@@ -1,3 +1,6 @@
+// frontend/src/components/Cards.js
+
+
 import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
@@ -15,8 +18,7 @@ function Cards() {
               text1="5 passengers"
               text2="Auto"
               label=" 751500 INR"
-              path="/ebook"
-              explorePath="/ebook"
+              path="/services"
             />
             <CardItem
               src="images/invicto.webp"
@@ -24,8 +26,7 @@ function Cards() {
               text1="5 passengers"
               text2="Auto"
               label="2521000 INR"
-              path="/invicto"
-              explorePath="/invicto"
+              path="/services"
             />
             <CardItem
               src="images/jimny.jpg"
@@ -34,7 +35,6 @@ function Cards() {
               text2="Auto"
               label="1227200 INR "
               path="/services"
-              explorePath="/services"
             />
           </ul>
           <ul className="cards__items">
@@ -44,8 +44,7 @@ function Cards() {
               text1="5 passengers"
               text2="Auto"
               label="666000 INR"
-              path="/Baleno"
-              explorePath="/Baleno"
+              path="/services"
             />
             <CardItem
               src="images/grandvitara.webp"
@@ -53,8 +52,7 @@ function Cards() {
               text1="5 passengers"
               text2="Auto"
               label="1080000 INR"
-              path="/GV"
-              explorePath="/GV"
+              path="/services"
             />
             <CardItem
               src="images/ignis.jpg"
@@ -62,8 +60,7 @@ function Cards() {
               text1="5 passengers"
               text2="Auto"
               label="584000 INR"
-              path="/ignis"
-              explorePath="/ignis"
+              path="/sign-up"
             />
           </ul>
         </div>

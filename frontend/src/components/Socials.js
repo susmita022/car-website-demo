@@ -1,3 +1,6 @@
+// frontend/src/components/Socials.js
+
+
 import React, { useState } from "react";
 import "./Socials.css";
 import TwitterCard from "./TwitterCard";
@@ -64,7 +67,6 @@ const Social = () => {
 
                       <TwitterCard
                         src="images/facebook (2).png"
-                        href="https://www.facebook.com/nexaexperience/videos/425950512709363/"
                         heading="The All-New XL6"
                         hashtag="@NexaExperience"
                         content="Indulgent #ContestAlert! It is good to pause for some self indulgence. Play the Time to Indulge Filter game for a chance to win some indulgent prizes! - Find the Time to Indulge filter by simply searching
@@ -73,7 +75,6 @@ const Social = () => {
                       <YoutubeCard
                         src="images/youtube.png"
                         link="images/yt2.png"
-                        href="https://www.youtube.com/embed/vfjvISvB_gc"
                         heading="S-Cross Refined Living"
                         hashtag="@NexaExperience"
                         content="Living out of an SUV. Sounds crazy right? But that's what Kamiya Jani did on her journey to self discovery with her S-Cross! Stay tuned for more"
