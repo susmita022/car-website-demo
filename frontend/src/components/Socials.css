@@ -1,0 +1,100 @@
+.card-social-group {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-social-container {
+    align-items: center;
+    padding: 2rem;
+    background: #fff;
+}
+
+.card-social-wrapper {
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.card-heading {
+    display: flex;
+    border-bottom: 1px solid #a5a5a5;
+    font-weight: 600;
+}
+
+.card-social {
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(78, 78, 78, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-social:hover {
+    transform: translateY(-5px);
+    background-color: #f7f7f7;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    margin-top: 10px;
+    color: #616161;
+    font-weight: 450;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    /* Set width to 100% to fill the container horizontally */
+    /* Set height to 100% to fill the container vertically */
+    overflow: hidden;
+}
+
+.cards_banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hashtag,
+.card-link .hashtag {
+    color: #0084FF;
+}
+
+.tabs {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.tabs button {
+    color: #444444;
+    background-color: #ffffff;
+    border-width: 0px;
+    width: 100px;
+    padding: 8px 8px;
+    /* Adjust the padding */
+    font-size: 15px;
+    font-weight: bold;
+}
+.tabs button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.tabs button.active {
+    color: #a8a7a7;
+    background-color: #ffffff;
+}
+
+.cards {
+    margin-top: -50px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
